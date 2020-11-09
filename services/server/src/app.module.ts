@@ -5,7 +5,10 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 import { PokemonModule } from './pokemon/pokemon.module'
 
 @Module({
-	imports: [ TypeOrmModule.forRoot(), PokemonModule],
+	imports: [ 
+		TypeOrmModule.forRoot(),
+		PokemonModule
+	],
 	controllers: [ AppController ],
 	providers: [ AppService ]
 })
