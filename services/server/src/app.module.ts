@@ -4,9 +4,11 @@ import { AppService } from './app.service'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { PokemonModule } from './pokemon/pokemon.module'
 
+import ormoptions from './ormconfig'
+
 @Module({
 	imports: [ 
-		TypeOrmModule.forRoot(),
+		TypeOrmModule.forRoot(ormoptions),
 		PokemonModule
 	],
 	controllers: [ AppController ],
