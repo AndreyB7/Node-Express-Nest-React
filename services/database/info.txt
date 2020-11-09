@@ -1,0 +1,3 @@
+find IP for pg4 DB connection
+docker ps
+docker inspect CONTAINER ID
