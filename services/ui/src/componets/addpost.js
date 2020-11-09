@@ -12,6 +12,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
 import TextField from '@material-ui/core/TextField';
+import Icon from '../images/check-solid.svg';
 
 const useStyles = makeStyles({
     table: {
@@ -37,7 +38,7 @@ const AddPost = () => {
 
     return (
         <form className={classes.root} autoComplete="off" onSubmit={handleSubmit}>
-            <h2>Add Pokemon</h2>
+            <h2>Add Pokemon <img width="15px" src={Icon}/></h2>
             <TableContainer component={Paper}>
                 <Table className={classes.table} aria-label="simple table">
                     <TableHead>
