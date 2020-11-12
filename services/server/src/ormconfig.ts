@@ -8,7 +8,7 @@ export default {
     username: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASS,
     database: 'TEST_SM',
-    entities: ['dist/**/*.entity.js'],
+    entities: ['dist/**/*.entity{.ts,.js}'],
     synchronize: true,
     logging: true
 } as ConnectionOptions;
