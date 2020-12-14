@@ -2,6 +2,7 @@
     "name": "root",
     "private": true,
     "dependencies": {
+        "jwt-decode": "^3.1.2",
         "lerna": "^3.22.1"
     },
     "scripts": {

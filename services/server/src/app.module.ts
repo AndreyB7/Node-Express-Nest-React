@@ -5,16 +5,16 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 import { PokemonModule } from './pokemon/pokemon.module'
 
 import {TypeOrmConfigService} from "./typeorm.options";
+import { AuthModule } from './auth/auth.module';
 import ormconfig from './ormconfig'
 
 @Module({
 	imports: [ 
-		//TypeOrmModule.forRoot( ormconfig ),
-		TypeOrmModule.forRootAsync({
-			useClass: TypeOrmConfigService,
-		}),
-		PokemonModule
-	],
+		//TypeOrmModule.forRootAsync({
+		//	useClass: TypeOrmConfigService,
+		//}),
+		//PokemonModule
+	AuthModule],
 	controllers: [ AppController ],
 	providers: [ AppService ]
 })
